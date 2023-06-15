@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Create Post | DevLinkUs </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Post</h2>
+    <form>
+      <div class="form-group">
+        <label for="thumbnail">Thumbnail Image</label>
+        <div class="thumbnail-preview">
+          <img id="thumbnail-preview-img" src="" alt="Thumbnail Preview">
+        </div>
+        <input type="file" id="thumbnail" name="thumbnail" onchange="previewThumbnail(event)">
+      </div>
+      
+      <div class="form-group">
+        <label for="position">Job Position:</label>
+        <input type="text" id="position" name="position" required>
+      </div>
+
+      <div class="form-group">
+        <label for="company">Job Company:</label>
+        <input type="text" id="company" name="company" required>
+      </div>
+
+      <div class="form-group">
+        <label for="salary">Salary Range:</label>
+        <input type="text" id="salary" name="salary" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Skills">Skills:</label>
+        <input type="text" id="Skills" name="Skills" required>
+      </div>
+
+      <div class="form-group">
+        <label for="application">Application Process:</label>
+        <input type="text" id="application" name="application" required>
+      </div>
+
+      <div class="form-group">
+        <label for="application">Interview Process:</label>
+        <input type="text" id="application" name="application" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mistakes">Mistakes:</label>
+        <input type="text" id="mistakes" name="mistakes" required>
+      </div>
+
+      <div class="form-group">
+        <label for="advice">Advice For Others:</label>
+        <input type="text" id="advice" name="advice" required>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Add Post">
+      </div>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
